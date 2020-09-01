@@ -1,0 +1,36 @@
+.contener{
+    display: flex;
+    /* flex-direction: row; */
+    flex-flow: row wrap; /* this is a shortcut for both flex-direction and flex-wrap;*/
+    /* flex-wrap: nowrap; */
+    justify-content: center;
+    /* align-items: stretch; */
+    /* align-content: flex-start; */
+    border: 2px solid yellow;
+    width: auto;
+    height: 600px;
+    
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    /*flex-direction*/
+
+    /* justify-content: center; */
+}
+ /* #one , #three , #five{
+     align-self: flex-end;
+    
+}  */
+/* #two{
+    
+}
+#five{
+    
+} */

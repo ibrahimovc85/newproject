@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .continer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            /* justify-content:center; */
+            border: 2px solid yellow;
+        }
+        .continer>*:last-child{
+            width: 290px;
+            height: 200px;
+            order: -1;
+        }
+        .continer>:first-child{
+            width: 290px;
+            height: 100px;
+            align-items: flex-start;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: stretch ;
+            height: auto;
+            border: 2px solid red;
+            border-radius: 8px;
+            
+        }
+        /*
+        .box:nth-child(1){
+            justify-self: left; 
+            align-self: flex-end;
+        } */
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <div class="box">one</div>
+        <!-- <div class="box">two</div> -->
+        <div class="box">three</div>
+    </div>
+</body>
+</html>
